@@ -1,0 +1,10 @@
+The file name: tidy_aggds.txt
+Format: tab separated, no quotes around strings, 1st line is column header. Excel compatible format.
+Columns: 
+  1: subject
+  2: activity, such as WALKING or LAYING from activity_labels.txt file of the original data set.
+  3-68: measurement columns such as tBodyAcc-mean()-X from features.txt file of the original data set.
+  
+For measurement columns each row contains the mean value for a given subject and activity.
+We have 6 activities and 30 subjects, which makes it 180 rows.
+The data set aggregates train and test data sets from the original data set.
