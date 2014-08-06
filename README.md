@@ -5,6 +5,7 @@ This is the Course Project for Getting and Cleaning Data project on Coursera (ht
 
 Download the data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Unzip the file into your working directory, the contents must go into a "UCI HAR Dataset" sub-directory in your working directory.
+
     >list.files()
     [1] "UCI HAR Dataset"
 
