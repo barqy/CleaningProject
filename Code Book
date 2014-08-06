@@ -1,10 +1,16 @@
 The file name: tidy_aggds.txt
 Format: tab separated, no quotes around strings, 1st line is column header. Excel compatible format.
 Columns: 
-  1: subject
-  2: activity, such as WALKING or LAYING from activity_labels.txt file of the original data set.
-  3-68: measurement columns such as tBodyAcc-mean()-X from features.txt file of the original data set.
+  1: subject - an integer number, range is 1 to 30.
+  2: activity - a string value such as WALKING or LAYING from activity_labels.txt file of the original data set.
+  3-68: mean of the feature (measurement), the values are numbers in scientific notation such as -3.567980e-001. Column names correspond to features such as tBodyAcc-mean()-X from features.txt file of the original data set. 
   
 For measurement columns each row contains the mean value for a given subject and activity.
 We have 6 activities and 30 subjects, which makes it 180 rows.
 The data set aggregates train and test data sets from the original data set.
+
+The original data set is described in detail on authors' web site at the following URL:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Original reserach is:
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
