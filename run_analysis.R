@@ -25,7 +25,7 @@ write_tidy<-function(dsroot="UCI HAR Dataset"){
 	#	write.table(dataa[,2:clen],"fulldata.txt",row.names=FALSE,quote=FALSE,sep="\t")
 
 	# aggregate (mean) by subject and activity
-	aggdt=aggregate(dataa[,4:clen],by=list(dataa$subject,dt$activity),FUN="mean")
+	aggdt=aggregate(dataa[,4:clen],by=list(dataa$subject,dataa$activity),FUN="mean")
 	names(aggdt) = c("subject","activity",features[cols,2])
 	write.table(aggdt,"tidy_aggds.txt",row.names=FALSE,quote=FALSE,sep="\t")
 }
