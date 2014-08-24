@@ -2,8 +2,10 @@ The dataset file name: tidy_aggds.txt
 Format: tab separated, no quotes around strings, 1st line is column header. Excel compatible format.
 Columns: 
   1: subject - an integer number, range is 1 to 30.
-  2: activity - a string value such as WALKING or LAYING from activity_labels.txt file of the original data set.
-  3-68: mean of the feature (measurement), the values are numbers in scientific notation such as -3.567980e-001. Column names correspond to features such as tBodyAcc-mean()-X from features.txt file of the original data set. 
+  2: activity - a string value such as WALKING or LAYING from "activity_labels.txt" file of the original data set.
+  3-68: mean of the feature (measurement), the values are numbers in scientific notation such as -3.567980e-001. 
+    Column names are unaltered feature names such as "tBodyAcc-mean()-X" from "features.txt" file of the original data set.
+    The features and their naming convention are described in "features_info.txt" of the original data.
   
 For measurement columns each row contains the mean value for a given subject and activity.
 We have 6 activities and 30 subjects, which makes it 180 rows.
