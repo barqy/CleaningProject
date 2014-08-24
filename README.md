@@ -17,3 +17,16 @@ Call write\_tidy() function, it should create tidy\_aggds.txt file in the workin
     [1] "tidy_aggds.txt" "UCI HAR Dataset"
 
 Look at the CodeBook.txt file for the file format and column descriptions.
+
+Description of the process:
+The resulting aggregated data set is created from "train" and "test" datasets in corresponding directories.
+For instance, in "test" data set the data is stored in X\_test.txt file. 
+Its columns are features as per features.txt file, 561 columns in total.
+We need only those columns which have mean() or std() in the feature names.
+
+The rows in the data set correspond to the subject and acrivity, which are in subject\_test.txt and y\_test.txt files.
+These files are merged with the data set, so that subject and activity columns are puplated in a long data set.
+The activities are given by their ids, so we replace them by match merging them with activity\_labels.txt file.
+
+Finally, we merge train and test data into one long data set with subject numbers and activity names, which has only the
+features we selected (means and stds). So, we aggregate this set by subject and acrivity, and write into a resulting file.
