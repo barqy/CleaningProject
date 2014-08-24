@@ -24,7 +24,7 @@ For instance, in "test" data set the data is stored in X\_test.txt file.
 Its columns are features as per features.txt file, 561 columns in total.
 We need only those columns which have mean() or std() in the feature names.
 
-The rows in the data set correspond to the subject and acrivity, which are in subject\_test.txt and y\_test.txt files.
+The rows in the data set correspond to the subject and activity, which are in subject\_test.txt and y\_test.txt files.
 These files are merged with the data set, so that subject and activity columns are puplated in a long data set.
 The activities are given by their ids, so we replace them by match merging them with activity\_labels.txt file.
 
