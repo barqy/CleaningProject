@@ -29,4 +29,4 @@ These files are merged with the data set, so that subject and activity columns a
 The activities are given by their ids, so we replace them by match merging them with activity\_labels.txt file.
 
 Finally, we merge train and test data into one long data set with subject numbers and activity names, which has only the
-features we selected (means and stds). So, we aggregate this set by subject and acrivity, and write into a resulting file.
+features we selected (means and stds). So, we aggregate this set by subject and activity, calculate means, then write into a resulting file.
